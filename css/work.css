@@ -73,12 +73,12 @@ span {
   animation: fade 1.9s ease-in-out 0s;
   transition: all 0.4s ease-in-out;
 }
-.text{
-    font-family: var(--text-font);
-    color:var(--heading-color);
-    font-size: 1rem;
+.text {
+  font-family: var(--text-font);
+  color: var(--heading-color);
+  font-size: 1rem;
 }
-.linklogo>a{
+.linklogo > a {
   text-decoration: none;
   color: var(--span-color);
   font-size: 1.3rem;
@@ -88,26 +88,26 @@ span {
   /* box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px; */
 }
 
-
-
 /* ------------------for mobile------------ */
 @media screen and (max-width: 600px) {
-  .bg{
+  .bg {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 0px 0px;
     overflow: hidden;
   }
-  .w_left > h2{
+  .w_left > h2 {
     margin-left: 50px;
   }
   .w_right {
     width: 100vw;
-    padding: 0px 15px;
-    justify-content: space-between;
-    grid-template-columns: 170px 170px;
-    /* gap: 10px; */
+    height: auto;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 0px;
+    justify-items: center;
   }
   .project {
     width: 170px;
