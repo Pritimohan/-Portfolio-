@@ -20,7 +20,6 @@
 
   header {
     padding: 0px 20px;
-
     height: 80px;
   }
   header > a {
@@ -108,7 +107,7 @@
   footer {
     font-size: 0.6rem;
   }
-  header > i {
+  header > #moreBtn {
     display: block;
     color: #827e82;
     font-size: 1.7rem;
@@ -129,8 +128,8 @@
     text-decoration: none;
     color: white;
   }
-  .dropBox > i {
-    top: 22px;
+  .dropBox > img {
+    top: 26px;
     right: 19px;
     position: absolute;
     color: white;

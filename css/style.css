@@ -37,7 +37,7 @@ header {
   z-index: 3;
   position: fixed;
 }
-header>i{
+header > #moreBtn {
   display: none;
 }
 .m_logo {
