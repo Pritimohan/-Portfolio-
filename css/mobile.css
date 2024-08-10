@@ -147,11 +147,12 @@
   }
   .btn {
     display: block;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 20px auto;
     width: 40vw;
     height: 5vh;
     border-radius: 10px;
     border: #1ed760 solid;
     background: transparent;
+    
   }
 }
