@@ -16,7 +16,7 @@
   --text-font: "Nunito", sans-serif;
   --footer-color: #0e0e0e;
 }
-span>.colour{
+span{
   color: var(--span-color);
 }
 section {
@@ -52,7 +52,7 @@ body {
 }
 .t_left > h2 {
   font-family: var(--heading--font);
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   letter-spacing: 2px;
   border-left: var(--span-color) solid 2px;
   padding: 8px 15px;

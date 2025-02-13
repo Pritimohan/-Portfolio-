@@ -112,21 +112,26 @@ li :hover {
 }
 .imgBox {
   overflow: hidden;
-  width: 250px;
-  height: 320px;
-  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius:50%;
+  border: var(--span-color) solid 3px;
+  padding: 10px;
+
 }
 .imgBox > img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
   object-position: center;
   transition: all 0.2s ease-in-out 0s;
+
 }
-.imgBox > img:hover {
+/* .imgBox > img:hover {
   width: 300px;
-  height: 350px;
-}
+  height: 300px;
+} */
 
 .a_left {
   color: var(--heading-color);
@@ -152,8 +157,8 @@ li :hover {
 .a_left > .p2 {
   color: var(--text-color);
   font-family: var(--text-font);
-  line-height: 19px;
-  font-size: 0.9rem;
+  /* line-height: 19px; */
+  font-size: 1.1rem;
   /* text-align: justify; */
 }
 /* <----------------------------- contener ------------------------------> */
@@ -163,7 +168,7 @@ li :hover {
   justify-content: space-around;
   align-items: center;
   height: 25vh;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .icon {
   width: 70px;
