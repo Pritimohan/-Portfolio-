@@ -13,3 +13,22 @@ dropBoxOptions.forEach((elm) => {
     dropBox.style.display = "none";
   });
 });
+
+
+// --------------------- PhotoChange Animation ---------------------
+{
+  const photo = document.querySelector("#photo");
+  const photoUrls = [
+    "img/profilePhoto2.jpg",
+    "img/profilePhoto3.jpg",
+    "img/profilePhoto4.jpg",
+    "img/profilePhoto5.jpg",
+  ]
+  let i = 0;
+  setInterval(() => { 
+    photo.src = photoUrls[i];
+    i = (i + 1) % photoUrls.length;
+  }, 900);  
+}
+
+
