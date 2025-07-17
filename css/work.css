@@ -27,12 +27,18 @@
 :root {
   --span-color: #1ed760;
   --text-color: #827e82;
+  --dark-gray: #2c2c2c;
   --background-color: #000000;
   --heading-color: #ffffff;
   --heading--font: "Poppins", sans-serif;
   --text-font: "Nunito", sans-serif;
   --footer-color: #0e0e0e;
 }
+/* For Chrome, Edge, and Safari */
+
+/* For Firefox */
+
+
 .bg {
   width: 100vw;
   height: 100vh;
@@ -57,16 +63,27 @@ span {
 .w_right {
   /* border: green solid; */
   width: fit-content;
+  height: 55vh;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  gap: 40px;
+  grid-template-rows: repeat(2);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
+
+.w_right::-webkit-scrollbar {
+  display: none;
+}
+
 .project {
-  width: 200px;
-  height: 90px;
+  width: 400px;
+  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 20px;
   background-color: #292929;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
@@ -74,9 +91,27 @@ span {
   transition: all 0.4s ease-in-out;
 }
 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   font-family: var(--text-font);
   color: var(--heading-color);
   font-size: 1rem;
+}
+.titleArea > p {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  margin-top: 5px;
+}
+.iconBox {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--dark-gray);
 }
 .linklogo > a {
   text-decoration: none;
@@ -101,16 +136,20 @@ span {
     margin-left: 50px;
   }
   .w_right {
+    /* background-color: yellow; */
     width: 100vw;
-    height: auto;
-    grid-template-rows: repeat(2, 100px);
-    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+    grid-template-rows: repeat(1);
+    grid-template-columns:none;
     row-gap: 15px;
     column-gap: 0px;
     justify-items: center;
+    padding: 0px 10px;
+    margin-top: 0px;
+    overflow-y: scroll;
   }
   .project {
-    width: 170px;
+    width: 100%;
     height: 90px;
   }
 }
